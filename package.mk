@@ -19,9 +19,9 @@ PKG_AUTORECONF="no"
 PKG_IS_ADDON="yes"
 PKG_ADDON_NAME="LADSPA RT-plugins"
 PKG_ADDON_TYPE="xbmc.service.library"
-PKG_ADDON_REQUIRES=""
+PKG_ADDON_VERSION="0.1.0"
 
-PKG_CMAKE_OPTS_TARGET+="-DCMAKE_C_FLAGS=-I../../alsa-lib-1.2.8/src/pcm/"
+PKG_CMAKE_OPTS_TARGET+="-DCMAKE_C_FLAGS=-I../../alsa-lib-1.2.11/src/pcm/"
 
 addon() {
   mkdir -p ${ADDON_BUILD}/${PKG_ADDON_ID}/lib/ladspa
